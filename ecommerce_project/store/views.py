@@ -9,7 +9,7 @@ def home(request, category_slug=None):
         products = Product.objects.filter(category=category_page, available=True)
     else:
         products = Product.objects.all().filter(available=True)
-    return render(request, 'home.html', {'category': category_page, 'products': products})
+    return render(request, 'home.html', {'category': category_page, 'product': products})
 
 def productPage(request):
     return render(request, 'product.html')

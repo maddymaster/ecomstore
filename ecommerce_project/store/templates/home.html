@@ -17,17 +17,17 @@
 </div>
 <div class="container">
     <div class="row">
-        {% for product in products %}
+        {% for products in product %}
         <div class="col-9 mx-auto col-md-6 col-lg-3">
             <div class="card mb-5" style="border-color: transparent;">
                 <div class="p-4">
-                    <img src="{{product.image.url}} " class="card-img-top " alt="{{product.name}} ">
+                    <img src="{{product.image.url}} " class="card-img-top " alt="{{products.name}} ">
                 </div>
                 <div class="card-footer d-flex justify-content-between " style="background: transparent; border-color: transparent; ">
-                    <p class="font-weight-bold-mb-0 "> {{product.name}}
+                    <p class="font-weight-bold-mb-0 "> {{products.name}}
                     </p>
                     <h5 class="text-info font-italic mb-0 ">
-                        <span class="mr-1 ">$</span> {{product.price}}
+                        <span class="mr-1 ">$</span> {{products.price}}
                     </h5>
                 </div>
             </div>
